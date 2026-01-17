@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather&display=swap"
+        rel="stylesheet">
+    <!-- CSS mobile first -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <!-- CSS larger view -->
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <!-- JS defer -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menuButton">≡</button>
+        <nav id="navMenu">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My Temple Collection</h1>
+        <section class="album">
+            <figure>
+                <img src="../images/temple1.jpg" alt="1">
+                <figcaption>Temple Recife</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/temple2.jpg" alt="2">
+                <figcaption>Temple Brasilia</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/temple3.jpg" alt="Temple 3">
+                <figcaption>Temple Rio de Janeiro</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Jonas | Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

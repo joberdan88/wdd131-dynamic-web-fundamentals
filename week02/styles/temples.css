@@ -1,0 +1,129 @@
+/* === Global Styles ==== */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Use Google Font */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+    color: #333;
+    /* Dark text for readability */
+}
+
+/* === Header === */
+header {
+    background-color: #333;
+    /* Dark header background */
+    color: white;
+    /* White text for contrast */
+    padding: 10px;
+    position: relative;
+    /* Needed for positioning the hamburger button */
+}
+
+header h1 {
+    margin: 0;
+    /* Remove default margin */
+}
+
+/* ==== Hamburger Button (Mobile Only) ==== */
+#menuButton {
+    position: absolute;
+    /* Place in top-right corner */
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    /* Large icon size */
+    background: none;
+    /* No background */
+    border: none;
+    /* No border */
+    color: white;
+    /* White icon */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+}
+
+/* ==== Navigation Menu ==== */
+#navMenu {
+    display: none;
+    /* Hidden by default on mobile */
+    flex-direction: column;
+    /* Stack links vertically */
+    background-color: #444;
+    /* Dark background for menu */
+}
+
+#navMenu.open {
+    display: flex;
+    /* Show menu when "open" class is toggled */
+}
+
+#navMenu a {
+    color: white;
+    /* White text links */
+    padding: 10px;
+    text-decoration: none;
+    /* Remove underline */
+}
+
+#navMenu a:hover {
+    background-color: #0066cc;
+    /* Blue hover effect */
+}
+
+/* == Main Content ===*/
+main {
+    max-width: 900px;
+    /* Limit width for readability */
+    margin: 0 auto;
+    /* Center horizontally */
+    padding: 20px;
+}
+
+/* Album grid layout */
+.album {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Mobile: single column */
+    gap: 20px;
+    /* Space between items */
+}
+
+/* == Image Styling === */
+.album img {
+    width: 100%;
+    /* Fill the column width */
+    height: 200px;
+    /* Fixed height for consistency */
+    object-fit: cover;
+    /* Crop excess without distortion */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+}
+
+/* == Figure and Caption === */
+figure {
+    margin: 0;
+    text-align: center;
+    /* Center caption under image */
+}
+
+figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #555;
+    /* Slightly lighter text */
+}
+
+/* ==== Footer ===== */
+footer {
+    background-color: #333;
+    /* Dark footer background */
+    color: white;
+    /* White text */
+    text-align: center;
+    padding: 10px;
+}
