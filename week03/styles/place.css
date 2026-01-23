@@ -53,6 +53,15 @@ main {
     margin-bottom: 1rem;
 }
 
+.weather-icon {
+    width: 50px;
+    /* controla a largura */
+    height: auto;
+    /* mantém proporção */
+    display: block;
+    margin: 0.5rem 0;
+}
+
 /* Responsive layout */
 @media (min-width: 600px) {
     .weather h2::after {
