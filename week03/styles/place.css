@@ -1,13 +1,9 @@
 :root {
     --primary-color: #006400;
-    /* verde escuro */
     --secondary-color: #FFD700;
-    /* amarelo ouro */
     --accent-color: #1E90FF;
-    /* azul vivo */
     --font-family: Arial, sans-serif;
     --background-color: #f0f8ff;
-    /* azul bem clarinho para o fundo */
 }
 
 body {
@@ -18,7 +14,6 @@ body {
     color: #333;
 }
 
-/* Header */
 header {
     background-color: var(--primary-color);
     color: white;
@@ -26,7 +21,6 @@ header {
     padding: 1rem;
 }
 
-/* Hero image */
 .hero img {
     width: 100%;
     height: auto;
@@ -34,12 +28,10 @@ header {
     border-bottom: 5px solid var(--secondary-color);
 }
 
-/* Main content */
 main {
     padding: 1rem;
 }
 
-/* Weather section */
 .weather {
     margin-top: 2rem;
     background-color: white;
@@ -55,15 +47,16 @@ main {
 
 .weather-icon {
     width: 50px;
-    /* controla a largura */
     height: auto;
-    /* mantém proporção */
     display: block;
     margin: 0.5rem 0;
 }
 
-/* Responsive layout */
 @media (min-width: 600px) {
+    .weather-icon {
+        display: none;
+    }
+
     .weather h2::after {
         content: " ⛅";
     }
@@ -75,7 +68,6 @@ main {
     }
 }
 
-/* Footer */
 footer {
     background-color: var(--secondary-color);
     text-align: center;
